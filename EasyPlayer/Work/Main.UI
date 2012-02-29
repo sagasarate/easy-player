@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="gb2312"?>
+<D3DGUI>
+	<Window Name="ActionPrompt" ID="0" IsInternal="false">
+		<Behavior Visible="true" Enable="false" CanDrag="false" CanResize="false" CanGetFocus="true" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+		<Frame X="653" Y="23" Width="74" Height="42" BKColor="-1"/>
+		<Borders Top="0" Bottom="0" Left="0" Right="0" TopLeft="0" TopRight="0" BottomLeft="0" BottomRight="0"/>
+		<Text Text="Stop"/>
+		<Font FaceName="Times New Roman" Height="35" Width="0" Weight="700" CharSet="0" Italic="false" OutPrecision="3" PitchAndFamily="18" Quality="1" FontColor="-1" Align="21" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+		<Texture TextureFile="Default.tga" RectLeft="250" RectTop="196" RectRight="254" RectBottom="201"/>
+	</Window>
+	<Window Name="ControlBar" ID="0" IsInternal="false">
+		<Behavior Visible="true" Enable="true" CanDrag="false" CanResize="true" CanGetFocus="true" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+		<Frame X="16" Y="538" Width="534" Height="45" BKColor="-1"/>
+		<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+		<Text Text=""/>
+		<Font FaceName="宋体" Height="16" Width="0" Weight="400" CharSet="1" Italic="false" OutPrecision="0" PitchAndFamily="0" Quality="0" FontColor="-1" Align="16" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+		<Texture TextureFile="Default.tga" RectLeft="174" RectTop="123" RectRight="203" RectBottom="152"/>
+		<Childs>
+			<ProgressBar Name="Seeker" ID="0" IsInternal="false">
+				<Behavior Visible="true" Enable="true" CanDrag="false" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false" Style="1" WorkMode="0" CurPos="50" MaxPos="100"/>
+				<Frame X="2" Y="2" Width="415" Height="36" BKColor="-1"/>
+				<Borders Top="1" Bottom="1" Left="1" Right="1" TopLeft="1" TopRight="1" BottomLeft="1" BottomRight="1"/>
+				<Texture TextureFile="Default.tga" RectLeft="43" RectTop="44" RectRight="56" RectBottom="57"/>
+				<Childs>
+					<Window Name="PBBarWnd" ID="0" IsInternal="true">
+						<Behavior Visible="true" Enable="true" CanDrag="true" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+						<Frame X="0" Y="0" Width="206" Height="34" BKColor="-1"/>
+						<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+						<Text Text=""/>
+						<Font FaceName="宋体" Height="16" Width="0" Weight="400" CharSet="1" Italic="false" OutPrecision="0" PitchAndFamily="0" Quality="0" FontColor="-1" Align="16" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+						<Texture TextureFile="Default.tga" RectLeft="103" RectTop="84" RectRight="116" RectBottom="97"/>
+					</Window>
+					<Window Name="TimeLength" ID="0" IsInternal="false">
+						<Behavior Visible="true" Enable="false" CanDrag="false" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+						<Frame X="176" Y="1" Width="65" Height="28" BKColor="-1"/>
+						<Borders Top="0" Bottom="0" Left="0" Right="0" TopLeft="0" TopRight="0" BottomLeft="0" BottomRight="0"/>
+						<Text Text="0/0"/>
+						<Font FaceName="Times New Roman" Height="35" Width="0" Weight="700" CharSet="0" Italic="false" OutPrecision="3" PitchAndFamily="18" Quality="1" FontColor="-1" Align="21" ShadowMode="2396745" ShadowColor="2147483647" ShadowWidth="1" CharSpace="0" LineSpace="0"/>
+						<Texture TextureFile="Default.tga" RectLeft="250" RectTop="196" RectRight="254" RectBottom="201"/>
+					</Window>
+				</Childs>
+			</ProgressBar>
+		</Childs>
+	</Window>
+	<Window Name="FileWnd" ID="0" IsInternal="false">
+		<Behavior Visible="true" Enable="true" CanDrag="true" CanResize="true" CanGetFocus="true" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+		<Frame X="51" Y="44" Width="535" Height="426" BKColor="-1"/>
+		<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+		<Text Text=""/>
+		<Font FaceName="宋体" Height="16" Width="0" Weight="400" CharSet="1" Italic="false" OutPrecision="0" PitchAndFamily="0" Quality="0" FontColor="-1" Align="16" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+		<Texture TextureFile="Default.tga" RectLeft="0" RectTop="121" RectRight="40" RectBottom="138"/>
+		<Childs>
+			<SimpleList Name="FileList" ID="0" IsInternal="false">
+				<Behavior Visible="true" Enable="true" CanDrag="false" CanResize="false" CanGetFocus="true" IsTopmost="false" TabIndex="0" IsTabContainer="false" LineSpace="0" IsMultiSelect="false" ScrollBarWidth="16" IsLoopScroll="true"/>
+				<Frame X="9" Y="10" Width="514" Height="403" BKColor="-1"/>
+				<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+				<Text Text=""/>
+				<Font FaceName="宋体" Height="21" Width="0" Weight="700" CharSet="134" Italic="false" OutPrecision="3" PitchAndFamily="2" Quality="1" FontColor="-1" Align="4" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+				<Texture TextureFile="Default.tga" RectLeft="0" RectTop="121" RectRight="40" RectBottom="138"/>
+				<Childs>
+					<ScrollBar Name="SL_ScrollBar" ID="0" IsInternal="true">
+						<Behavior Visible="false" Enable="true" CanDrag="false" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false" ScrollRange="0" Style="0"/>
+						<Frame X="0" Y="0" Width="0" Height="20" BKColor="-1"/>
+						<Borders Top="1" Bottom="1" Left="1" Right="1" TopLeft="1" TopRight="1" BottomLeft="1" BottomRight="1"/>
+						<Texture TextureFile="Default.tga" RectLeft="174" RectTop="92" RectRight="203" RectBottom="121"/>
+						<Childs>
+							<Button Name="SBDec" ID="3242" IsInternal="true">
+								<Behavior Visible="false" Enable="true" CanDrag="false" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+								<Frame X="0" Y="0" Width="0" Height="0" BKColor="-1"/>
+								<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+								<Text Text=""/>
+								<Font FaceName="宋体" Height="16" Width="0" Weight="400" CharSet="1" Italic="false" OutPrecision="0" PitchAndFamily="0" Quality="0" FontColor="-1" Align="16" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+								<Texture>
+									<Normal TextureFile="Default.tga" RectLeft="101" RectTop="42" RectRight="114" RectBottom="55" TextOffsetX="0" TextOffsetY="0"/>
+									<Active TextureFile="Default.tga" RectLeft="101" RectTop="42" RectRight="114" RectBottom="55" TextOffsetX="0" TextOffsetY="0"/>
+									<Press TextureFile="Default.tga" RectLeft="101" RectTop="55" RectRight="114" RectBottom="68" TextOffsetX="0" TextOffsetY="0"/>
+									<Disable TextureFile="Default.tga" RectLeft="101" RectTop="42" RectRight="114" RectBottom="55" TextOffsetX="0" TextOffsetY="0"/>
+								</Texture>
+							</Button>
+							<Button Name="SBInc" ID="3243" IsInternal="true">
+								<Behavior Visible="false" Enable="true" CanDrag="false" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+								<Frame X="0" Y="0" Width="0" Height="0" BKColor="-1"/>
+								<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+								<Text Text=""/>
+								<Font FaceName="宋体" Height="16" Width="0" Weight="400" CharSet="1" Italic="false" OutPrecision="0" PitchAndFamily="0" Quality="0" FontColor="-1" Align="16" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+								<Texture>
+									<Normal TextureFile="Default.tga" RectLeft="115" RectTop="42" RectRight="128" RectBottom="55" TextOffsetX="0" TextOffsetY="0"/>
+									<Active TextureFile="Default.tga" RectLeft="115" RectTop="42" RectRight="128" RectBottom="55" TextOffsetX="0" TextOffsetY="0"/>
+									<Press TextureFile="Default.tga" RectLeft="115" RectTop="55" RectRight="128" RectBottom="68" TextOffsetX="0" TextOffsetY="0"/>
+									<Disable TextureFile="Default.tga" RectLeft="115" RectTop="42" RectRight="128" RectBottom="55" TextOffsetX="0" TextOffsetY="0"/>
+								</Texture>
+							</Button>
+							<Button Name="SBTrack" ID="3244" IsInternal="true">
+								<Behavior Visible="false" Enable="true" CanDrag="false" CanResize="false" CanGetFocus="false" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+								<Frame X="0" Y="0" Width="0" Height="0" BKColor="-1"/>
+								<Borders Top="2" Bottom="2" Left="2" Right="2" TopLeft="2" TopRight="2" BottomLeft="2" BottomRight="2"/>
+								<Text Text=""/>
+								<Font FaceName="宋体" Height="16" Width="0" Weight="400" CharSet="1" Italic="false" OutPrecision="0" PitchAndFamily="0" Quality="0" FontColor="-1" Align="16" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+								<Texture>
+									<Normal TextureFile="Default.tga" RectLeft="103" RectTop="84" RectRight="116" RectBottom="97" TextOffsetX="0" TextOffsetY="0"/>
+									<Active TextureFile="Default.tga" RectLeft="103" RectTop="84" RectRight="116" RectBottom="97" TextOffsetX="0" TextOffsetY="0"/>
+									<Press TextureFile="Default.tga" RectLeft="103" RectTop="84" RectRight="116" RectBottom="97" TextOffsetX="0" TextOffsetY="0"/>
+									<Disable TextureFile="Default.tga" RectLeft="103" RectTop="84" RectRight="116" RectBottom="97" TextOffsetX="0" TextOffsetY="0"/>
+								</Texture>
+							</Button>
+						</Childs>
+					</ScrollBar>
+				</Childs>
+			</SimpleList>
+		</Childs>
+	</Window>
+	<Window Name="FrameRate" ID="0" IsInternal="false">
+		<Behavior Visible="true" Enable="false" CanDrag="false" CanResize="false" CanGetFocus="true" IsTopmost="false" TabIndex="0" IsTabContainer="false"/>
+		<Frame X="14" Y="20" Width="74" Height="27" BKColor="-1"/>
+		<Borders Top="0" Bottom="0" Left="0" Right="0" TopLeft="0" TopRight="0" BottomLeft="0" BottomRight="0"/>
+		<Text Text="0000"/>
+		<Font FaceName="Times New Roman" Height="35" Width="0" Weight="700" CharSet="0" Italic="false" OutPrecision="3" PitchAndFamily="18" Quality="1" FontColor="-1" Align="21" ShadowMode="0" ShadowColor="-16777216" ShadowWidth="0" CharSpace="0" LineSpace="0"/>
+		<Texture TextureFile="Default.tga" RectLeft="250" RectTop="196" RectRight="254" RectBottom="201"/>
+	</Window>
+</D3DGUI>
